@@ -18,7 +18,8 @@ pip install -r requirements.txt
 python app.py
 
 Homepage
-https://imgur.com/a/SiNzUry
+![CKXl0Qa - Imgur](https://github.com/user-attachments/assets/10cc7ab6-80ea-461e-a59e-b72eb9a01746)
+
 
 
 sign Up page
