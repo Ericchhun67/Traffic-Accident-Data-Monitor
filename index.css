@@ -1,0 +1,25 @@
+.homepage {
+  height: 100vh; /* full-screen background area */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* About Section Overlay */
+.about {
+  /* background: rgba(64, 64, 64, 0.9); */
+  color: #fff;
+  padding: 20px 40px;
+  border-radius: 10px;
+  text-align: center;
+  width: 20%;
+  position: absolute;
+  bottom: 50px;
+  left: 70%;
+  height: 60px;
+  /* transform: translateX(-50%); */
+}
+

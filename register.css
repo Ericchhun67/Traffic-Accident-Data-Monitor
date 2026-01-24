@@ -1,0 +1,123 @@
+body {
+    margin:0;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url('../img/background/registerpage.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.register-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+}
+
+.register-box {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+    padding: 40px;
+    width: 420px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border: 4px solid #000;
+}
+
+.register-logo {
+    width: 90px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    font-style: italic;
+    color:#000;
+    box-shadow: black 1px 1px 2px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    color: #222
+
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border: 2px solid #ccc;
+    font-size: 1rem;
+}
+
+.btn-submit {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.btn-submit:hover {
+    background-color: #c0392b;
+}
+
+.alt-signup {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.alt-signup span {
+
+    display:block;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.alt-signup button {
+    margin: 5px;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+.alt-signup button:hover {
+    background: #ddd;
+}
+
+.error-message {
+    color:red;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: black 1px 1px 2px;
+}
+
+
+
+.login-link {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.login-link a {
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+
+}

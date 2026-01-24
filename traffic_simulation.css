@@ -1,0 +1,26 @@
+.simulation-container {
+    text-align: center;
+    background: #eaf4ff;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.sim-title {
+    font-size: 1.8rem;
+    color: #2a4d9c;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+#trafficcanvas {
+    background-image: url("../img/background/trafficpage.png");
+    background-size:cover;
+    background-position: center;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #222;
+}
+
+

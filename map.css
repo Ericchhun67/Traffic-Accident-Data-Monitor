@@ -1,0 +1,59 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background: none !important; /* remove any inherited background image */
+}
+.leaflet-container {
+  background: #d0e6f9 !important; /* optional fallback color */
+}
+
+.map-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+
+.map-page {
+  background: none !important; /* no background from parent templates */
+}
+
+#map {
+  height: 100vh; /* full height */
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.mapboxgl-map {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.legend {
+    position: relative;
+    background: rbga(255, 255, 255, 0.8);
+    padding:10px;
+    border-radius: 8px;
+    
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display:inline-block;
+    margin-right: 6px;
+}
+
+.dot.green {
+    background-color: green;
+}
+
+.dot.orange {
+    background-color: orange;
+}
+
+.dot.red {
+    background-color: red;
+}
