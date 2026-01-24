@@ -19,3 +19,8 @@ python app.py
 
 Homepage
 https://imgur.com/a/SiNzUry
+
+
+sign Up page
+<img width="4108" height="2148" alt="T7masY8 - Imgur" src="https://github.com/user-attachments/assets/cdc64d3b-fdbc-437b-b28d-3ba625d701bb" />
+
