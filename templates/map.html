@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Traffic & Accident Map{% endblock %}
+
+{% block head %}
+  <!-- Fixed Leaflet CSS (no integrity issues) -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+
+  <!-- Your custom CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/map.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="map-page">
+  <header class="map-header">
+    <h2>🌎 Live Traffic & Accident Map</h2>
+    <p>View real-time traffic intensity across major U.S. cities</p>
+  </header>
+
+  <!-- Map container -->
+  <div id="map" style="height: 90vh; width: 100%;"></div>
+
+  <div class="legend">
+    <h4>Legend</h4>
+    <div><span class="dot green"></span> No Traffic</div>
+    <div><span class="dot orange"></span> Light Traffic</div>
+    <div><span class="dot red"></span> Heavy Traffic</div>
+  </div>
+</div>
+
+<!-- Fixed Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- ✅ Your JS file (after Leaflet loads) -->
+<script src="{{ url_for('static', filename='js/map.js') }}"></script>
+{% endblock %}

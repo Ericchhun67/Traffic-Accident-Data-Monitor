@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}Login - Traffic & Accident Monitor{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/forgot_password.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="login-container">
+  <div class="login-box">
+    <img src="{{ url_for('static', filename='img/icon/stoplight.png') }}" alt="Stop Light Logo" class="login-logo">
+    <h2>Login - Traffic & accident Data Monitor</h2>
+
+    {% if error %}
+      <p class="error-message">{{ error }}</p>
+    {% endif %}
+
+    <form action="{{ url_for('login') }}" method="POST">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required>
+
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <div class="login-actions">
+        <button type="button" class="btn-submit">Login</button>
+      </div>
+
+      <hr>
+      <div class="alt-login">
+        <span>Sign in with</span>
+        <button type="button" class="btn-google">Google</button>
+        <button type="button" class="btn-apple">Apple ID</button>
+        <hr>
+        <p>or</p>
+        <form action="{{ url_for('forgot_password')}}" method="GET">
+        <button type="button" class="btn-forgot-password">Forgot Password</button>
+        </form>
+      </div>
+
+      <p class="register-link">
+        Don’t have an account? <a href="{{ url_for('register') }}">Sign up</a>
+      </p>
+    </form>
+  </div>
+</div>
+{% endblock %}

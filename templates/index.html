@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}Home - Traffic & Accident Monitor{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+
+
+{% block content %}
+<section class="homepage">
+            
+    <!-- Top search bar -->
+    <div class="search-bar container">
+      <form action="{{ url_for('traffic_data')}}" method="GET">
+        <input type="text" name="query" placeholder="Search traffic data by city, state..." required>
+        <button type="submit">Search</button>
+      </form>
+    </div>
+      
+    <!-- Welcome Section -->
+    <div class="welcome-section">
+        <h1>Welcome {{ session.get('user', 'Guest') }}</h1>
+        <h2 class="slogan">Drive Carefully<br>
+            No Drinking, No Texting & Driving</h2>
+    </div>
+
+    <!-- Live Map Preview -->
+    <div class="map-preview">
+        <h3>Live Map Preview</h3>
+        <div class="map-legend">
+            <p><span class="legend green"></span> Shows no traffic or accidents</p>
+            <p><span class="legend yellow"></span> Shows light traffic</p>
+            <p><span class="legend red"></span> Shows heavy traffic</p>
+        </div>
+        <!-- Temporarily remove or update to a valid route -->
+        <a href="{{ url_for('traffic_data') }}" class="btn-view-map">View Full Map</a>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about">
+    <h2>About Traffic & Accident</h2>
+    <p>
+        Traffic & Accident helps users stay safe on the road with real-time accident alerts, 
+        color-coded traffic conditions, and interactive stoplight behavior. 
+        Our goal is to make driving safer, smarter, and easier for everyone.
+    </p>
+    <!-- Temporarily link to traffic_data -->
+    <a href="{{ url_for('traffic_data') }}" class="btn-more">More Info</a>
+</section>
+{% endblock %}

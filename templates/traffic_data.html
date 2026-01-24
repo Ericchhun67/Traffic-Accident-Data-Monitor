@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}Traffic & Accident Data{% endblock %}
+
+{% block content %}
+<section class="traffic-section">
+  <h2>🚗 Traffic & Accident Statistics</h2>
+
+  {% if query %}
+    <h3>Results for <strong>{{ query }}</strong></h3>
+    {% if city_summary %}
+      <div class="stats-card">
+        <h4>City Summary</h4>
+        <ul>
+          <li>Total Records: {{ city_summary.total_records }}</li>
+          <li>Average Speed: {{ city_summary.average_speed }} mph</li>
+          <li>Average Accidents: {{ city_summary.average_accidents }}</li>
+        </ul>
+      </div>
+    {% else %}
+      <p>No data available for <strong>{{ query }}</strong>.</p>
+    {% endif %}
+  {% endif %}
+
+  {% if accident_summary %}
+  <div class="stats-card">
+    <h4>Recent Accident Summary</h4>
+    <ul>
+      <li>Total Accidents (7 days): {{ accident_summary.total_accidents }}</li>
+      <li>Fatal Accidents: {{ accident_summary.fatal_accidents }}</li>
+      <li>Trend (Daily): 
+        <ul>
+          {% for date, count in accident_summary.trend %}
+            <li>{{ date }} → {{ count }}</li>
+          {% endfor %}
+        </ul>
+      </li>
+    </ul>
+  </div>
+  {% endif %}
+
+  {% if overall %}
+  <div class="stats-card">
+    <h4>Overall Traffic Summary</h4>
+    <ul>
+      <li>Total Records: {{ overall.total_records }}</li>
+      <li>Unique Cities: {{ overall.unique_cities }}</li>
+      <li>Average Speed: {{ overall.average_speed }} mph</li>
+      <li>Average Accidents: {{ overall.average_accidents }}</li>
+    </ul>
+  </div>
+  {% endif %}
+</section>
+{% endblock %}

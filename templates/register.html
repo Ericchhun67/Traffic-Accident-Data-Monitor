@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}Register - Traffic & Accident Monitor{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}">
+
+
+{% endblock %}
+
+{% block content %}
+<div class="register-container">
+  <div class="register-box">
+    <img src="{{ url_for('static', filename='img/icon/stoplight.png') }}" alt="Stop Light Logo" class="register-logo">
+    <h2>Sign Up to Continue</h2>
+    
+    {% if error %}
+      <p class="error-message">{{ error }}</p>
+    {% endif %}
+
+    <form action="{{ url_for('register') }}" method="POST">
+      <label for="username">Create Username</label>
+      <input type="text" id="username" name="username" required>
+      
+      <label for="email">Create Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Create Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="confirm_password">Confirm Password</label>
+      <input type="password" id="confirm_password" name="confirm_password" required>
+
+      <div class="register-actions">
+        <button type="submit" class="btn-submit">Register</button>
+      </div>
+
+      <hr>
+
+      <div class="alt-signup">
+        <span>Sign up with</span>
+        <button type="button" class="btn-google">Google</button>
+        <button type="button" class="btn-apple">Apple ID</button>
+      </div>
+
+      <p class="login-link">
+        Already have an account? <a href="{{ url_for('login') }}">Login</a>
+      </p>
+    </form>
+  </div>
+</div>
+{% endblock %}
