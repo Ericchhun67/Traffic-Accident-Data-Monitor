@@ -38,3 +38,4 @@ https://imgur.com/a/0CQvSeR
 
 Traffic light simulator
 <img width="2054" height="1074" alt="Screenshot 2026-01-23 at 7 41 09 PM" src="https://github.com/user-attachments/assets/587a029d-a3b1-4e82-b0c4-87b9ecc10ec3" />
+Live Demo: https://imgur.com/a/9CQZ0AY
