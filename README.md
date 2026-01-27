@@ -33,6 +33,8 @@ Accidents stats
 
 traffic simulator
 <img width="2054" height="1074" alt="Screenshot 2026-01-23 at 7 40 36 PM" src="https://github.com/user-attachments/assets/06369cea-8fb6-4dc5-9177-fd2a7bc55df7" />
+Live Demo:
+https://imgur.com/a/0CQvSeR
 
 Traffic light simulator
 <img width="2054" height="1074" alt="Screenshot 2026-01-23 at 7 41 09 PM" src="https://github.com/user-attachments/assets/587a029d-a3b1-4e82-b0c4-87b9ecc10ec3" />
