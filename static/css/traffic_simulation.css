@@ -14,7 +14,7 @@
     margin: 10px 0;
 }
 
-#trafficcanvas {
+#trafficCanvas {
     background-image: url("../img/background/trafficpage.png");
     background-size:cover;
     background-position: center;

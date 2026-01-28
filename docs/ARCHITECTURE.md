@@ -240,7 +240,7 @@ CREATE TABLE accident_data (
 
 ## Technologies Used
 
-- **Backend**: Python 3.8+, Flask 2.3+
+- **Technologies Used**: Python 3.9+, Flask 2.3+
 - **Database**: SQLite3
 - **Frontend**: HTML5, CSS3, JavaScript ES6+
 - **Mapping**: Leaflet.js 1.9+

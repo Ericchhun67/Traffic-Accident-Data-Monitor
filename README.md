@@ -1,6 +1,6 @@
 # 🚦 Traffic Accident Data Monitor
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Flask](https://img.shields.io/badge/Flask-2.3+-green.svg)](https://flask.palletsprojects.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
@@ -19,7 +19,7 @@ A comprehensive Flask-powered Traffic & Accident Data Monitor that visualizes li
 
 ## 🛠️ Technology Stack
 
-- **Backend:** Python, Flask
+- **Backend:** Python 3.9+, Flask 2.3+
 - **Database:** SQLite3
 - **Frontend:** HTML5, CSS3, JavaScript
 - **Mapping:** Leaflet.js
@@ -30,7 +30,7 @@ A comprehensive Flask-powered Traffic & Accident Data Monitor that visualizes li
 
 Before running this application, ensure you have the following installed:
 
-- Python 3.8 or higher
+- Python 3.9 or higher
 - pip (Python package manager)
 - Git
 
@@ -60,20 +60,29 @@ The application will start on `http://localhost:5000` by default.
 Traffic-Accident-Data-Monitor/
 ├── app.py                      # Main Flask application
 ├── requirements.txt            # Python dependencies
+├── LICENSE                     # MIT License
+├── README.md                   # Project documentation
+├── CONTRIBUTING.md             # Contribution guidelines
+├── CODE_OF_CONDUCT.md          # Community standards
+├── .gitignore                  # Git ignore rules
+├── docs/                       # Documentation
+│   ├── API.md                 # API documentation
+│   └── ARCHITECTURE.md        # Architecture documentation
+├── static/                     # Static assets
+│   ├── css/                   # Stylesheets
+│   └── js/                    # JavaScript files
 ├── templates/                  # HTML templates
 │   ├── base.html              # Base template
 │   ├── index.html             # Homepage
 │   ├── login.html             # Login page
 │   ├── register.html          # Registration page
 │   └── ...
-├── utils/                      # Backend utility modules
-│   ├── db_handler.py          # Database operations
-│   ├── user_handler.py        # User authentication
-│   ├── stats_handler.py       # Statistics processing
-│   ├── map_handler.py         # Map data preparation
-│   └── ...
-├── js/                         # JavaScript files
-└── *.css                       # Stylesheet files
+└── utils/                      # Backend utility modules
+    ├── db_handler.py          # Database operations
+    ├── user_handler.py        # User authentication
+    ├── stats_handler.py       # Statistics processing
+    ├── map_handler.py         # Map data preparation
+    └── ...
 ```
 
 ## 🎯 Usage
