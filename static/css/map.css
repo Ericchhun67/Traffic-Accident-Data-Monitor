@@ -32,7 +32,7 @@ body, html {
 
 .legend {
     position: relative;
-    background: rbga(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.8);
     padding:10px;
     border-radius: 8px;
     
