@@ -1,0 +1,335 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 15px 0 20px 0 20px;
+    position: relative;
+    /* background: none !important;  Prevent overwriting index background */
+    color: #222;
+    /* overflow-x: hidden; */
+    /* width: -500vh;
+    height:-100vw; */
+    /* background-size: cover;       fills screen, maintains aspect ratio */
+    /* background-repeat: no-repeat; /* no tiling */
+    /* background-position: center;  centers the image */
+    /* background-attachment: fixed; stays fixed when scrolling */ 
+    /* justify-content: center; */
+}
+
+/* Make all sections take full width */
+main, section {
+    width: 100%;
+    height: fit-content;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b7def;
+    color: white;
+    padding: 12px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #f4c542;
+}
+
+/* User Display + Logout Button */
+.username {
+    font-weight: 600;
+    margin-right: -100px;
+
+}
+
+.logout-btn {
+    display: block;        /* Makes it appear on its own line */
+    margin-top: 10px;      /* Adds space below the text */
+    margin-left: 0;        /* Aligns with the Welcome text */
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 14px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+
+main {
+    padding: 20px 40px 0 40px 0 50px;
+    min-height: calc(100vh - 160px); /*leaves room for navbar + footer */
+}
+
+
+footer {
+    background-color: #0e7ae6;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    bottom: 0;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #f4c542;
+    color: #101820;
+    padding: 10px 18px;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d4a315;
+    color: white;
+}
+
+.homepage {
+    position: relative;
+    min-height: 100vh;
+    background-image: url("../img/background/homepage.png");
+    background-size: cover;
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    color: #fff;
+    text-align: center;
+}
+
+.search-bar {
+    position: absolute;
+    top: 25px;     /* slightly below navbar */
+    right: -770px;
+    z-index: 10;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px 10px;
+    border: 2px solid #f4c542;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+    width: 229px;
+    height: 5px;
+    color: #000;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus {
+    box-shadow: 0 0 8px #f4c542;
+}
+
+.search-bar button {
+    background-color: #f4c542;
+    color: #101820;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #d4a315;
+    color: #fff;
+}
+
+
+.welcome-section {
+    margin-top: 10px;
+    margin-bottom: auto;
+    rotate: initial;
+}
+
+.welcome-section h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-top: 30px;
+    color:#f11111;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.welcome-section h2 {
+    font-size: 44px;
+    color:#1ae042;
+    text-shadow: #000 2px 2px 6px;
+}
+
+.slogan {
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: bold;
+    color: #1ae042;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    margin-bottom: 60px;
+}
+
+
+.map-preview {
+    position: relative;
+    background-color: rgba(255, 251, 251, 0.932);
+    padding: 35px 0 25px 25px 0;
+    border-radius: 12px;
+    width: 85%;
+    max-width: 350px;
+    text-align: left;
+    margin-bottom: 50px;
+    left:-770px;
+    bottom: 500px;
+    box-shadow: #000 2px 2px 8px;
+    color:#000;
+}
+
+.map-preview h3 {
+    color: #f4c542;
+    margin-bottom: 15px;
+}
+
+.map-legend p {
+    font-size: 15px;
+    margin: 6px 0;
+}
+
+.legend {
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
+.legend.green {
+    background-color: #2ecc71;
+}
+
+.legend.yellow {
+    background-color: #f1c40f;
+}
+
+.legend.red {
+    background-color: #e74c3c;
+}
+
+.btn-view-map {
+    display: inline-block;
+    margin-top: 15px;
+    color: #101820;
+    background-color: #f4c542;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-view-map:hover {
+    background-color: #d4a315;
+    color: #0a0a0a;
+}
+
+
+.about {
+    /* background-color: rgba(0, 0, 0, 0.65); */
+    padding: 40px 20px;
+    border-radius: 10px;
+    width: 85%;
+    max-width: 700px;
+    margin: 0 auto 80px;
+    color: #ffffff;
+    text-align: center;
+    top: 500px;
+    margin-top: -50px;
+}
+
+.about h2 {
+    color: orange;
+    text-shadow: #000 2px 2px 6px;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.about p {
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color:#0edee1;
+    text-shadow: #000 1px 1px 4px;
+    font-size: 20px;
+}
+
+.btn-more {
+    color: #101820;
+    background-color: #f4c542;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-more:hover {
+    background-color: #d4a315;
+    color: #fff;
+}
+
+
+@media (max-width: 768px) {
+    .search-bar {
+        position: static;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .homepage {
+        padding: 80px 20px;
+    }
+
+    .slogan {
+        font-size: 2rem;
+    }
+
+    .map-preview,
+    .about {
+        width: 95%;
+    }
+}
+
+

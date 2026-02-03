@@ -1,0 +1,31 @@
+/* accident_info.css */
+.accident-page {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../img/background/causeofaccidents.png"); /* your uploaded image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding: 40px;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+}
+
+.overlay-text {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+.overlay-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.overlay-text p {
+  font-size: 1.2rem;
+}

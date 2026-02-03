@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Stop Sign Simulation{% endblock %}
+
+{% block content %}
+<section class="stop-sign-container">
+  <h2 class="sim-title">4-Way Stop Sign Simulation</h2>
+  <p class="sim-subtitle">First car to fully stop goes first. Only one car crosses at a time.</p>
+
+  <div class="sim-controls">
+    <button id="toggleSpawn" class="sim-btn">Pause Spawns</button>
+    <button id="resetSim" class="sim-btn sim-btn-secondary">Reset</button>
+  </div>
+
+  <canvas id="stopSignCanvas" width="920" height="560"></canvas>
+
+  <p class="sim-description">
+    Watch cars arrive from all four directions, stop at the line, then proceed in arrival order.
+  </p>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/stop_sign_simulation.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,21 @@
+.simulation-container {
+  text-align: center;
+  background-color: #e9f5ff;
+  padding: 20px;
+}
+
+#trafficCanvas {
+  background-image: url("../img/background/trafficpage.png");
+  background-size: cover;
+  border-radius: 8px;
+  border: 2px solid #333;
+}
+
+
+.light-container {
+    margin: 20px auto;
+    width: 150px;
+    padding: 20px;
+
+
+}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Traffic Flow Simulation{% endblock %}
+
+{% block content %}
+<div class="simulation-container">
+  <h2 class="sim-title">🚗 Traffic Flow Simulation</h2>
+  <canvas id="trafficCanvas" width="1200" height="600"></canvas>
+  <p class="sim-description">
+    Explore how different traffic conditions impact vehicle movement and congestion.
+  </p>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/traffic_simulation.js') }}"></script>
+{% endblock %}

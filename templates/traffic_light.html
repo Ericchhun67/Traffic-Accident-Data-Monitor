@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Traffic Light Simulation{% endblock %}
+
+{% block content %}
+<section class="simulation-section">
+  <h2>🚦 Traffic Light Simulation</h2>
+  <p>Cars respond to the traffic light in real time.</p>
+
+  <!-- Add a canvas element for JS drawing -->
+  <canvas id="trafficCanvas" width="900" height="400" style="border-radius: 8px; display:block; margin:auto; background:#d9e7f7;"></canvas>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/traffic_light.js') }}"></script>
+{% endblock %}

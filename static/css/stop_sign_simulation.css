@@ -1,0 +1,64 @@
+.stop-sign-container {
+  text-align: center;
+  padding: 24px 16px 40px;
+  background: linear-gradient(180deg, #eaf3ff 0%, #f7fbff 45%, #ffffff 100%);
+  min-height: 100vh;
+}
+
+.stop-sign-container .sim-title {
+  font-size: 1.9rem;
+  color: #1f3b6b;
+  font-weight: 600;
+  margin: 8px 0 6px;
+}
+
+.stop-sign-container .sim-subtitle {
+  margin: 0 0 16px;
+  color: #37527a;
+  font-weight: 500;
+}
+
+.sim-controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.sim-btn {
+  background: #0b7def;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 6px 12px rgba(11, 125, 239, 0.25);
+}
+
+.sim-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 16px rgba(11, 125, 239, 0.28);
+}
+
+.sim-btn.sim-btn-secondary {
+  background: #f4c542;
+  color: #101820;
+  box-shadow: 0 6px 12px rgba(244, 197, 66, 0.25);
+}
+
+#stopSignCanvas {
+  max-width: 100%;
+  border: 2px solid #1f2937;
+  border-radius: 12px;
+  background: #e9eef5;
+  box-shadow: 0 18px 30px rgba(17, 24, 39, 0.15);
+}
+
+.sim-description {
+  margin-top: 14px;
+  color: #2f415c;
+  font-size: 0.95rem;
+}
