@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Traffic & Accident Data Monitor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="nav">
+      <div class="logo">Traffic & Accident Data Monitor</div>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#workflow">How It Works</a>
+        <a href="#launch">Launch</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="badge">Live Traffic + Accident Intelligence</p>
+        <h1>See what is happening on the road before you drive.</h1>
+        <p class="subhead">
+          A real-time traffic and accident monitoring dashboard with map-based insights,
+          alerts, and interactive simulations.
+        </p>
+        <div class="cta-group" id="launch">
+          <a class="btn primary" id="live-app-link" href="https://REPLACE_WITH_LIVE_URL">Launch Live App</a>
+          <a class="btn ghost" href="https://github.com/Ericchhun67/Traffic-Accident-Data-Monitor">View Source</a>
+        </div>
+        <p class="fineprint">Update the live app link after the Flask host is deployed.</p>
+      </div>
+      <div class="hero-panel">
+        <div class="panel-card">
+          <h3>Today at a glance</h3>
+          <ul>
+            <li>Traffic levels across major U.S. cities</li>
+            <li>Accident indicators with quick context</li>
+            <li>Map-driven exploration with live updates</li>
+          </ul>
+        </div>
+        <div class="panel-card accent">
+          <h3>Built for visibility</h3>
+          <p>
+            Use the live dashboard to track traffic flow, surface accident hotspots, and
+            visualize risk in one place.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <h2>What you can explore</h2>
+      <div class="feature-grid">
+        <div class="feature">
+          <h4>Live Traffic Map</h4>
+          <p>Color-coded city markers show current traffic intensity at a glance.</p>
+        </div>
+        <div class="feature">
+          <h4>Accident Signals</h4>
+          <p>Highlight reported accident locations and track trends over time.</p>
+        </div>
+        <div class="feature">
+          <h4>Interactive Simulations</h4>
+          <p>Explore traffic flow, stoplight behavior, and stop sign rules visually.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="workflow" id="workflow">
+      <h2>How it works</h2>
+      <div class="steps">
+        <div class="step">
+          <span>1</span>
+          <p>Traffic + accident data is collected or mocked for visualization.</p>
+        </div>
+        <div class="step">
+          <span>2</span>
+          <p>The Flask API prepares map-ready data with city and state context.</p>
+        </div>
+        <div class="step">
+          <span>3</span>
+          <p>Leaflet renders the map and simulations update in real time.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div>
+        <h2>Ready to explore the live dashboard?</h2>
+        <p>Use the live link once Flask hosting is deployed.</p>
+      </div>
+      <a class="btn primary" href="https://REPLACE_WITH_LIVE_URL">Open Live Dashboard</a>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <p>Traffic & Accident Data Monitor © 2026</p>
+  </footer>
+</body>
+</html>
