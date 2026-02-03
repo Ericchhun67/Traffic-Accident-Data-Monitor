@@ -388,7 +388,8 @@ def map_info():
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
+    debug = os.environ.get("FLASK_DEBUG", "0") == "1"
     print(" Starting Traffic & Accident Data Monitor Server...")
     print(f" Running on: http://127.0.0.1:{port}")
 
-    app.run(host="0.0.0.0", port=5002, debug=True)
+    app.run(host="0.0.0.0", port=port, debug=debug)

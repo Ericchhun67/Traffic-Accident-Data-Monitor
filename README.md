@@ -21,4 +21,4 @@ Enable it:
 3. Save — your landing page will appear at the URL above
 
 ## Flask Hosting
-Deploy the Flask app to a host like Render/Railway/Fly.io, then update the landing page links in `docs/index.html` to point to the live app.
+This repo includes a `render.yaml` for one-click deployment on Render.\n\nSteps:\n1. Go to Render → New → Blueprint\n2. Select this repo\n3. Render will detect `render.yaml` and deploy the web service\n4. Once live, update the landing page links in `docs/index.html` to point to the Render URL
