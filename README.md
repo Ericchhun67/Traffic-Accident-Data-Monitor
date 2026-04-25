@@ -1,44 +1,62 @@
-# 🚦 Traffic & Accident Data Monitor
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:2563EB,100:F97316&height=220&section=header&text=Traffic%20%26%20Accident%20Data%20Monitor&fontSize=38&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Real-Time%20Traffic%20Analytics%20%7C%20Accident%20Insights%20%7C%20Interactive%20Dashboards&descAlignY=58&descSize=16" alt="Traffic Accident Data Monitor animated header" />
+</p>
 
-**Real-time traffic monitoring and accident analytics dashboard** | Interactive visualizations | Predictive insights | Traffic simulations
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=900&color=F97316&center=true&vCenter=true&width=850&lines=Monitor+traffic+conditions+in+real+time;Analyze+accident+patterns+and+trends;Visualize+data+with+interactive+dashboards;Simulate+traffic+scenarios+for+better+planning" alt="Typing animation" />
+</p>
 
-[![GitHub stars](https://img.shields.io/github/stars/Ericchhun67/Traffic-Accident-Data-Monitor?style=social)](https://github.com/Ericchhun67/Traffic-Accident-Data-Monitor)
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
-[![Flask](https://img.shields.io/badge/Flask-Latest-green)](https://flask.palletsprojects.com/)
-[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
-
-## 📋 Overview
-
-Traffic & Accident Data Monitor is a **full-stack web application** designed for real-time traffic management and accident analytics. Perfect for city planners, emergency response teams, and transportation analysts, this project combines **powerful backend analytics** with **intuitive frontend visualizations**.
-
-### 🎯 Why This Project?
-
-- 🎓 **Learn Full-Stack Development** - Python backend + modern frontend architecture
-- 🏙️ **Real-World Application** - Solve actual urban traffic problems
-- 📊 **Data Analytics** - Understand traffic patterns and accident trends
-- 🔄 **Simulation Engine** - Test traffic scenarios and interventions
-- 🔐 **Production Features** - User authentication, session management, error handling
+<p align="center">
+  <a href="https://github.com/Ericchhun67/Traffic-Accident-Data-Monitor">
+    <img src="https://img.shields.io/github/stars/Ericchhun67/Traffic-Accident-Data-Monitor?style=social" alt="GitHub stars" />
+  </a>
+  <img src="https://img.shields.io/badge/Python-3.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python badge" />
+  <img src="https://img.shields.io/badge/Flask-Web%20App-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask badge" />
+  <img src="https://img.shields.io/badge/Leaflet.js-Maps-199900?style=for-the-badge&logo=leaflet&logoColor=white" alt="Leaflet badge" />
+  <img src="https://img.shields.io/badge/License-MIT-FACC15?style=for-the-badge" alt="MIT license badge" />
+</p>
 
 ---
 
-## ✨ Key Features
+## Overview
 
-### 🗺️ **Live Map Visualization**
-- Real-time traffic flow visualization using Leaflet.js
-- Interactive map with accident markers and traffic density heatmaps
-- City-wide traffic overview with zoom and filtering capabilities
+**Traffic & Accident Data Monitor** is a full-stack web application for monitoring traffic conditions, analyzing accident trends, and visualizing transportation data through interactive dashboards.
 
-### 📊 **Advanced Analytics & Dashboards**
-- Traffic accident trend analysis with interactive charts
-- City-level traffic statistics and KPIs
-- Historical data patterns and predictive insights
-- Customizable dashboards for different metrics
+The project combines a Python and Flask backend with dynamic frontend visualizations to help users explore traffic flow, accident patterns, congestion areas, and simulation-based insights. It is designed for learning full-stack development while solving a real-world urban mobility problem.
 
-### 🚨 **Intelligent Alert System**
-- Real-time accident detection and alerts
-- Traffic congestion warnings
-- Emergency response notifications
-- Alert filtering and customization
+## Why This Project?
+
+- **Real-World Use Case**: Focuses on traffic safety, congestion, and accident analysis
+- **Full-Stack Development**: Combines backend APIs, frontend dashboards, and data-driven UI
+- **Interactive Maps**: Uses map-based visualizations for traffic and accident data
+- **Analytics Focused**: Highlights trends, patterns, and key transportation metrics
+- **Simulation Ready**: Supports experimenting with traffic scenarios and possible improvements
+
+---
+
+## Key Features
+
+### Live Map Visualization
+
+- Interactive traffic map powered by Leaflet.js
+- Accident markers with location-based details
+- Traffic density and congestion visualization
+- Zoom, filter, and explore city-level traffic data
+
+### Analytics Dashboard
+
+- Accident trend analysis with charts and visual insights
+- Traffic statistics and key performance indicators
+- Historical accident and congestion pattern tracking
+- Dashboard views for quick decision-making
+
+### Intelligent Alert System
+
+- Accident and congestion alert support
+- Emergency-response-focused notifications
+- Filterable alerts by severity, location, or traffic condition
+- Designed to support real-time monitoring workflows
+
 
 ### 🚦 **Traffic Simulation Engine**
 - Interactive traffic light simulator
