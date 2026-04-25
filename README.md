@@ -1,9 +1,11 @@
+<h1 align="center">🚦 Traffic & Accident Data Monitor</h1>
+
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:2563EB,100:F97316&height=220&section=header&text=Traffic%20%26%20Accident%20Data%20Monitor&fontSize=38&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Real-Time%20Traffic%20Analytics%20%7C%20Accident%20Insights%20%7C%20Interactive%20Dashboards&descAlignY=58&descSize=16" alt="Traffic Accident Data Monitor animated header" />
+  <strong>Real-time traffic monitoring, accident analytics, and interactive transportation dashboards</strong>
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=900&color=F97316&center=true&vCenter=true&width=850&lines=Monitor+traffic+conditions+in+real+time;Analyze+accident+patterns+and+trends;Visualize+data+with+interactive+dashboards;Simulate+traffic+scenarios+for+better+planning" alt="Typing animation" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=900&color=F97316&center=true&vCenter=true&width=850&lines=Monitor+traffic+conditions+in+real+time;Analyze+accident+patterns+and+trends;Visualize+traffic+data+with+interactive+maps;Explore+dashboards+for+smarter+city+planning" alt="Typing animation" />
 </p>
 
 <p align="center">
@@ -17,6 +19,11 @@
 </p>
 
 ---
+
+## Overview
+
+**Traffic & Accident Data Monitor** is a full-stack web application for monitoring traffic conditions, analyzing accident trends, and visualizing transportation data through interactive dashboards.
+
 
 ## Overview
 
